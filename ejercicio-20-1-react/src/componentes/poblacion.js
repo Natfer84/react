@@ -1,12 +1,12 @@
-export default function Poblacion (){
+export default function Poblacion (props){
     return (
         <>
-        <label for="poblacion">Población: </label>
+        <label for="poblacion">{props.poblacion}</label>
         <select name="poblacion" id="poblacion">
-        <option>Alicante</option>
-        <option>Madrid</option>
-        <option>Sevilla</option>
-        <option>Valencia</option>
+        <option>{props.ciudad1}</option>
+        <option>{props.ciudad2}</option>
+        <option>{props.ciudad3}</option>
+        <option>{props.ciudad4}</option>
         </select> 
         </>
     );

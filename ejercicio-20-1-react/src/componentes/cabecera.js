@@ -1,7 +1,7 @@
-export default function Cabecera(){
+export default function Cabecera(props){
     return(
         <h1 className="titulo">
-            Formulario de registro
+            {props.titulo}
         </h1>
     );
 } 

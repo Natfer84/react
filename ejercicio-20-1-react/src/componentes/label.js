@@ -1,6 +1,6 @@
-export default function Label() {
+export default function Label(props) {
     return (
-      <label type="text" name="nombre">Nombre: </label>
+      <label type="text" name="nombre">{props.name}</label>
     );
   }
   
