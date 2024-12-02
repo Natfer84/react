@@ -4,7 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <RegistrationForm />
+      <RegistrationForm 
+      nombre="Nombre de usuario: " 
+      correo="Correo de usuario: " />
     </div>
   );
 }
