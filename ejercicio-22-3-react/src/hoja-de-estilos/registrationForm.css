@@ -1,4 +1,30 @@
+body{
+    background-color: rgb(253, 234, 234);
+}
 .contenedor-form{
-    width: 600px;
-    background-color: rgb(184, 182, 182);
+    width: 500px;
+    background-color: rgb(216, 213, 213);
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: -3px 3px 8px 3px rgb(156, 129, 129);
+}
+.contenedor-nombre,
+.contenedor-correo{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+    
+}
+input{
+   border-radius: 4px;
+   padding: 10px;
 }

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import "../hoja-de-estilos/registrationForm.css";
 
 const RegistrationForm = (props) => {
-  const [nombre, setText] = useState('');
-  const [apellido, setText2] = useState('');
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
 
   const cambioTexto = (event) => {
-    setText(event.target.value);
+    setNombre(event.target.value);
   };
   const cambioTexto2 = (event) => {
-    setText2(event.target.value);
+    setApellido(event.target.value);
   };
 
 
