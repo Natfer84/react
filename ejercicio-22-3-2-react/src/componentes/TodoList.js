@@ -1,42 +1,61 @@
 import React, { useState } from "react";
 
 const TodoList = () => {
+  /* useState para el input */
   const [tarea, setTarea] = useState("");
+    /* useState para el array */
+  const [arrayTareas, setArrayTarea] = useState([]);
+   /* useState para borrar un elemento de array */
+  const [arrayBorar, setArrayBorrar] = useState(arrayTareas);
 
+
+
+  /*funcion para tratar los datos del input*/
   const handleChange = (event) => {
     setTarea(event.target.value);
   };
 
   /*funcion para meter tareas en array*/
-  let arrayTareas = [];
-  function tareas() {
-    arrayTareas.push({ tarea });
-    console.log(arrayTareas);
+  const tareas = () => {
+    if(tarea.trim() !== "")
+      setArrayTarea([...arrayTareas, {tarea}]);
+    setTarea("");
   }
+ console.log(arrayTareas);
 
-  /* funcion para vaciar el input*/
-  function limpiarInput() {
-    if (tarea.trim() !== "") {
-      setTarea("");
-    }
-  }
+ const borrarTareas = () => {
+  setArrayBorrar.filter([...arrayBorar]);
+ }
+
+
+ 
+////me he quedaddo creando una funcion para eliminar un elemento del array
+
 
   return (
     <div>
-      <input type="text" value={tarea} onChange={handleChange} />
+      <input type="text" value={tarea} onChange={handleChange}  />
       <ul>
-        {arrayTareas.map((item, index) => (
-          <li key={index}> {item} </li>
+        {arrayTareas.map((tarea, posicion) => (
+          <li key={posicion}> {tarea.tarea} </li>
         ))}
       </ul>
       <button
-        onClick={() => {
-          tareas();
-          limpiarInput();
-        }}
+        onClick={() => {tareas()}}
       >
         Añadir tarea
       </button>
+
+
+      <button
+        onClick= {() => {setArrayBorrar(
+          arrayBorar.filter(a =>
+            a.posicion !== tarea
+          ))}}
+      >
+        Eliminar tarea
+      </button>
+
     </div>
   );
 };
