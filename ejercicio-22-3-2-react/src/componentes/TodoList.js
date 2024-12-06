@@ -3,57 +3,59 @@ import React, { useState } from "react";
 const TodoList = () => {
   /* useState para el input */
   const [tarea, setTarea] = useState("");
-    /* useState para el array */
+  /* useState para el array */
   const [arrayTareas, setArrayTarea] = useState([]);
-   /* useState para borrar un elemento de array */
-  const [arrayBorar, setArrayBorrar] = useState(arrayTareas);
+  //const [borrarArray, setBorrarArray] = useState(arrayTareas);
 
-
+ 
 
   /*funcion para tratar los datos del input*/
   const handleChange = (event) => {
     setTarea(event.target.value);
   };
 
-  /*funcion para meter tareas en array*/
+  /*funcion para meter tarea en array*/
   const tareas = () => {
-    if(tarea.trim() !== "")
-      setArrayTarea([...arrayTareas, {tarea}]);
+    if (tarea.trim() !== "") setArrayTarea([...arrayTareas, {id: Date.now(), tarea }]);
     setTarea("");
-  }
- console.log(arrayTareas);
+  };
+  console.log(arrayTareas);
 
- const borrarTareas = () => {
-  setArrayBorrar.filter([...arrayBorar]);
- }
-
-
- 
-////me he quedaddo creando una funcion para eliminar un elemento del array
-
+  
 
   return (
     <div>
-      <input type="text" value={tarea} onChange={handleChange}  />
+      <input type="text" value={tarea} onChange={handleChange} />
+
       <ul>
-        {arrayTareas.map((tarea, posicion) => (
-          <li key={posicion}> {tarea.tarea} </li>
+        {arrayTareas.map((posicion) => (
+          <li key={posicion.id}>
+            {posicion.tarea}{" "}
+            <button
+              onClick={() => {
+                setArrayTarea(arrayTareas.filter(tarea => tarea.id !== posicion.id ))
+              }}
+            >
+              Eliminar
+            </button>
+          </li>
         ))}
       </ul>
+
       <button
-        onClick={() => {tareas()}}
+        onClick={() => {
+          tareas();
+        }}
       >
         Añadir tarea
       </button>
 
-
       <button
-        onClick= {() => {setArrayBorrar(
-          arrayBorar.filter(a =>
-            a.posicion !== tarea
-          ))}}
+        onClick={() => {
+          setArrayTarea(arrayTareas.slice(0,-1));
+        }}
       >
-        Eliminar tarea
+        Eliminar última tarea
       </button>
 
     </div>
