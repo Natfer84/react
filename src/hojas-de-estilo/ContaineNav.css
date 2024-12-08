@@ -1,0 +1,33 @@
+.containeNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(101, 2, 195);
+    height: 50px;
+    color:white;
+    border-bottom:  2px solid rgb(34, 25, 48, 1);
+}
+.containeNav__header h1{
+    margin: 0px;
+}
+.containeNav__header{
+    font-size: 18px;
+    margin: 0px 30px;
+}
+.containeNav__Ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:40px;
+    list-style: none;
+    margin: 0px 30px;
+}
+.containeNav__Ul a{
+text-decoration: none;
+cursor: pointer;
+color:white;
+
+}
