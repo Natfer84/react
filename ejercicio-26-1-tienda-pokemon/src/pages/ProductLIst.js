@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css"; // Importa el archivo CSS para los estilos
 import Product from "../components/Product";
 
+
 // Componente principal que maneja la lista de productos y el carrito
 export default function ProductList() {
   const [cart, setCart] = useState([]);
@@ -19,7 +20,7 @@ export default function ProductList() {
   };
 
   return (
-    <div>
+    <div className="boxProductos">
       <h1>Catálogo de Productos</h1>
       <div className="product-list">
         {products.map((product) => (
@@ -30,7 +31,7 @@ export default function ProductList() {
           />
         ))}
       </div>
-
+ 
       <h2>Carrito</h2>
       <ul>
         {cart.map((item, index) => (
@@ -39,6 +40,7 @@ export default function ProductList() {
           </li>
         ))}
       </ul>
+
     </div>
   );
 }

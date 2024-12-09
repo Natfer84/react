@@ -1,4 +1,4 @@
-import React from "react";
+// Un componente que representa un solo producto
 export default function Product({ product, onAddToCart }) {
     return (
       <div className="product">

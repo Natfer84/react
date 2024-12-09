@@ -1,9 +1,18 @@
 import React from "react";
+import NavBar from "./NavBar";
+
 
 export default function Header() {
   return (
-    <header>
-      <h1>Tienda Pokemon</h1>
-    </header>
+    <div className="BoxHeader">
+      <div className="BoxHeader__Header">
+        <header className="headerTitulo">
+          <h1>Tienda Pokemanía</h1>
+        </header>
+      </div> 
+      <div className="BoxHeader__Nav" >
+        <NavBar />
+      </div>
+    </div>
   );
 }

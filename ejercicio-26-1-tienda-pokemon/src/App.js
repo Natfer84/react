@@ -1,23 +1,24 @@
+
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProductList from "./pages/ProductList";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Product from "./components/Product";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Conocenos from "./pages/conocenos";
 
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <NavBar />
-      <Product />
+      <Routes>
+        <Route path="/products" element={<ProductList />} />
+        <Route path="/conocenos" element={<Conocenos />} />
+      
+      </Routes>
       <Footer />
-
-    </div>
-
-
-  )
+    </Router>
+  );
 }
 
 export default App;
