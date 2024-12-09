@@ -25,7 +25,7 @@ export default function ProductList() {
         {products.map((product) => (
           <Product
             key={product.id}
-            product={product}
+            product={product}s
             onAddToCart={handleAddToCart}
           />
         ))}
