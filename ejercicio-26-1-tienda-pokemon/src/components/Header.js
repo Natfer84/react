@@ -13,6 +13,8 @@ export default function Header() {
       <div className="BoxHeader__Nav" >
         <NavBar />
       </div>
+     
     </div>
+  
   );
 }

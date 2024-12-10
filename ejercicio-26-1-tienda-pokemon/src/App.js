@@ -18,7 +18,7 @@ function App() {
       <Routes>
       <Route path="/products" element={<ProductList cart={cart} setCart={setCart} />} />
         <Route path="/conocenos" element={<Conocenos />} />
-        <Route path="/CarritoP" element={<CarritoP cart={cart} />} />
+        <Route path="/Carrito" element={<CarritoP cart={cart} />} />
       </Routes>
       <Footer />
     </Router>
