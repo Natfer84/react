@@ -11,6 +11,9 @@ export default function NavBar() {
         <li className="navBox__Li">
           <Link to="/conocenos">Conócenos</Link>
         </li>
+        <li className="navBox__Li">
+          <Link to="/carrito">Carrito</Link>
+        </li>
       </ul>
     </nav>
   );

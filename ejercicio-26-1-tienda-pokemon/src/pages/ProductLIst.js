@@ -3,9 +3,10 @@ import "../App.css"; // Importa el archivo CSS para los estilos
 import Product from "../components/Product";
 
 
+
 // Componente principal que maneja la lista de productos y el carrito
-export default function ProductList() {
-  const [cart, setCart] = useState([]);
+export default function ProductList({cart, setCart}) {
+  
 
   const products = [
     { id: 1, name: "Producto 1", price: "$10", image: "/image/Bulbasaur.jpg" },
@@ -31,15 +32,6 @@ export default function ProductList() {
           />
         ))}
       </div>
- 
-      <h2>Carrito</h2>
-      <ul>
-        {cart.map((item, index) => (
-          <li key={index}>
-            {item.name} - {item.price}
-          </li>
-        ))}
-      </ul>
 
     </div>
   );
