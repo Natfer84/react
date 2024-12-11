@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
+import Product from "./Product";
 
 const FetchData = () => {
   const [pokemonList, setpokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const handleAddToCart = (product) => {
+    setpokemonList([...pokemonList, product]);
+  };
 
   useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
@@ -36,11 +41,11 @@ const FetchData = () => {
     <div>
       <h2>Lista de pokémon</h2>
       <div>
-        {pokemonList.map((pokemon, index) => (
-          <div key={index}>
-            <div>{pokemon.name}</div>
-            <img src={pokemon.image} alt={pokemon.name}></img>
-          </div>
+        {pokemonList.map((product, index) => (
+            <Product 
+             key={product.id}
+             product={product}
+             onAddToCart={handleAddToCart} />
         ))}
       </div>
     </div>
