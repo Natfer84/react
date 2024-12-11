@@ -1,5 +1,5 @@
 import React from "react";
-import {link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export default function NavBar (){
@@ -7,13 +7,13 @@ export default function NavBar (){
         <nav className="boxNavBar">
             <ul className="boxNavBar__Ul">
                 <li className="boxNavBar__Li">
-                    <link to="/">Inicio</link>
+                    <Link to="/">Inicio</Link>
                 </li>
                 <li className="boxNavBar__Li">
-                    <link to="/product">Productos</link>
+                    <Link to="/product">Productos</Link>
                 </li>
                 <li className="boxNavBar__Li">
-                    <link to="/car">Carrito</link>
+                    <Link to="/car">Carrito</Link>
                 </li>
             </ul>
         </nav>

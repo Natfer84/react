@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Product from "./component/Product";
+import Product from "../component/Product";
 
-const FetchData = () => {
+const FetchData_ = () => {
   const [pokemonList, setpokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -52,4 +52,4 @@ const FetchData = () => {
   );
 };
 
-export default FetchData;
+export default FetchData_;
