@@ -39,7 +39,7 @@ const FetchData = () => {
 
   return (
     <div>
-      <h2>Lista de pokémon</h2>
+      <h2>Lista de Pokémon</h2>
       <div>
         {pokemonList.map((product, index) => (
             <Product 
