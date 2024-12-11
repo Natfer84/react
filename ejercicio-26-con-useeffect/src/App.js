@@ -1,12 +1,20 @@
-import FetchData from './component/FetchData';
-import './App.css';
+import FetchData from './page/FetchData';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from './component/Header.js';
+
 
 function App() {
-  
+
   return (
-    <div className="App">
-   <FetchData />
-    </div>
+
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/product" element={<FetchData />} />
+        </Routes>
+      </Router>
+
   );
 }
 
