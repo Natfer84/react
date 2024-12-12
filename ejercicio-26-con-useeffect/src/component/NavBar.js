@@ -13,7 +13,8 @@ export default function NavBar (){
                     <Link to="/product">Productos</Link>
                 </li>
                 <li className="boxNavBar__Li">
-                    <Link to="/car">Carrito</Link>
+                    <Link to="/car">
+                    <img src="https://w7.pngwing.com/pngs/173/464/png-transparent-pokemon-ball-pokeball-area-wiki-technology-thumbnail.png" alt="bola de pokemon" className="boxNavBar__Li__img"></img></Link>
                 </li>
             </ul>
         </nav>

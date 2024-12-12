@@ -38,9 +38,9 @@ const FetchData_ = () => {
   }
 
   return (
-    <div>
-      <h2>Lista de Pokémon</h2>
-      <div>
+    <div className="boxPokemon__div">
+      <h2 className="boxPokemon__h2">Lista de Pokémon</h2>
+      <div className="boxPokemon">
         {pokemonList.map((product, index) => (
             <Product 
              key={product.id}
