@@ -3,7 +3,7 @@
    ::before{
     box-sizing: border-box;
    }
-
+/*cabecera y nav*/
    .boxHeader {
        position: relative;
    }

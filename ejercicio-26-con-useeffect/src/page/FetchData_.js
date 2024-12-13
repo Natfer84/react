@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "../component/Product";
 
+
 const FetchData_ = () => {
   const [pokemonList, setpokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
