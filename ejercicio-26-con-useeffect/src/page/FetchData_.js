@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Product from "../component/Product";
 
 
-const FetchData_ = () => {
+const FetchData_ = ({ onAddToCart }) => {
   const [pokemonList, setpokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,6 +23,7 @@ const FetchData_ = () => {
               pokemonDetails.push({
                 name: pokemon.name,
                 image: details.sprites.front_default,
+                price: 10
               });
 
               if (pokemonDetails.length === data.results.length) {
@@ -44,9 +45,9 @@ const FetchData_ = () => {
       <div className="boxPokemon">
         {pokemonList.map((product, index) => (
             <Product 
-             key={product.id}
+             key={index.id}
              product={product}
-             onAddToCart={handleAddToCart} />
+             onAddToCart={onAddToCart} />
         ))}
       </div>
     </div>
