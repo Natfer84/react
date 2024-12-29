@@ -4,15 +4,15 @@ export default function Car({ pokemonList, onIncrement, onDecrement, onRemove })
   if (!pokemonList || pokemonList.length === 0) {
     return (
       <div className="boxCart_Carrito_Vacio">
-        <h2>Carrito</h2>
-        <p>El carrito está vacío.</p>
+        <h2>Pokebola</h2>
+        <p>Pokebola está vacía.</p>
       </div>
     );
   }
 
   return (
     <div className="boxCart_Carrito">
-      <h2>Carrito</h2>
+      <h2>Pokebola</h2>
       <div className="boxCart_Carrito__Datos">
         {pokemonList.map((item, index) => (
           <div key={index} className="boxCart_Carrito__Datos_producto">
@@ -20,7 +20,7 @@ export default function Car({ pokemonList, onIncrement, onDecrement, onRemove })
               <img src={item.product.image} alt={item.product.name} />
             </div>
             <div className="boxCart_Carrito__Datos__name">{item.product.name}</div>
-            <div className="boxCart_Carrito__Datos__price">${item.product.price}</div>
+            <div className="boxCart_Carrito__Datos__price">{item.product.price}€</div>
 
             {/* Contador de cantidad */}
             <div className="quantity-controls">

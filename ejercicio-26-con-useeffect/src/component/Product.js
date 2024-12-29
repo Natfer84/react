@@ -9,7 +9,7 @@ export default function Product({ product, onAddToCart }) {
         </div>
         <div className="boxProduct__name">{product.name}</div>
         <button onClick={() => onAddToCart(product)} className="boxProduct__button">
-          Añadir al carrito
+          Añadir a Pokebola
         </button>
       </div>
     </div>
