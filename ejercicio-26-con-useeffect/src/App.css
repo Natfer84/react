@@ -159,3 +159,9 @@
         margin: 10px;
         cursor: pointer;
     }
+    .box_CarCount{
+        width: 20px;
+        height: 20px;
+        border-radius: 10000px;
+        border: 1px solid red;
+    }
