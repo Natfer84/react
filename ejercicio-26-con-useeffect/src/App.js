@@ -6,6 +6,7 @@ import Car from './component/Car'; // Usamos el componente Car directamente
 import './App.css';
 
 function App() {
+
   // Estado para el carrito (ahora incluye cantidad de productos)
   const [cart, setCart] = useState([]);
 
