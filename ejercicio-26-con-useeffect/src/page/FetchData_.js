@@ -3,6 +3,7 @@ import Product from "../component/Product";
 
 
 
+
 const FetchData_ = ({ onAddToCart }) => {
   const [pokemonList, setpokemonList] = useState([]);
   const [loading, setLoading] = useState(true);

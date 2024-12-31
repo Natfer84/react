@@ -1,0 +1,57 @@
+/*Estilos cabecera y Nav*/
+*,
+::after,
+::before{
+ box-sizing: border-box;
+}
+.boxHeader {
+    position: relative;
+  
+}
+.boxHeader__h1{
+ color:rgba(4, 66, 174, 0.788)
+}
+.boxHeader__div__h1__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    right: 0px;
+}
+.boxHeader__div__h1__nav li {
+    list-style: none;
+    text-decoration: none;
+}
+.boxHeader__div__h1__nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.boxHeader__div__h1__nav a {
+ color:rgba(4, 66, 174, 0.788);
+    text-decoration: none;
+    font-weight: bold;
+}
+.boxHeader__div__img {
+    width: 100%;
+    height: 300px;
+}
+.boxHeader__div__img img {
+ width: 100%;
+ height: 183px;
+ object-fit: contain;
+ position: absolute;
+ top: 57px;
+ right: 3%;
+}
+/*bola caza pokemon, imitación al carrito*/
+.boxNavBar__Li__img {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}

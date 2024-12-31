@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-
 export default function NavBar() {
   return (
     <nav className="boxNavBar">
@@ -21,7 +20,7 @@ export default function NavBar() {
               className="boxNavBar__Li__img"
             ></img>
           </Link>
-    
+         
         </li>
       </ul>
     </nav>

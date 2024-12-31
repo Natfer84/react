@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './component/Header';
 import FetchData from './page/FetchData_';
 import Car from './component/Car'; // Usamos el componente Car directamente
-import './App.css';
+import "./App.css"
+
+
 
 function App() {
 
