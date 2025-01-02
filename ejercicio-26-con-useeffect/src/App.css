@@ -5,10 +5,6 @@
    }
    /*Estilos cabecera y Nav*/
 *,
-::after,
-::before{
- box-sizing: border-box;
-}
 .boxHeader {
     position: relative;
   
@@ -45,6 +41,7 @@
 .boxHeader__div__img {
     width: 100%;
     height: 300px;
+    
 }
 .boxHeader__div__img img {
  width: 100%;
@@ -54,6 +51,19 @@
  top: 57px;
  right: 3%;
 }
+.boxHederContainer__img2__p{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:40px;
+}
+.boxHeader__div__img2{
+}
+.boxHeader__div__img2__p{
+  width: 700px;
+}
+
 /*bola caza pokemon, imitación al carrito*/
 .boxNavBar__Li__img {
     height: 30px;
@@ -95,7 +105,7 @@
  color:rgba(4, 66, 174, 0.788)
 }
 
-/* CARRITO */
+/* CARRITO-POKEBOLA*/
 .boxCart_Carrito{
     display: flex;
     flex-direction: column;
