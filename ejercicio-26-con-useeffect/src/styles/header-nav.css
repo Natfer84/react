@@ -49,6 +49,18 @@
  top: 57px;
  right: 3%;
 }
+.boxHederContainer__img2__p{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:40px;
+}
+.boxHeader__div__img2{
+}
+.boxHeader__div__img2__p{
+  width: 700px;
+}
 /*bola caza pokemon, imitación al carrito*/
 .boxNavBar__Li__img {
     height: 30px;

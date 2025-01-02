@@ -5,51 +5,45 @@
    }
    /*Estilos cabecera y Nav*/
 *,
-.boxHeader {
-    position: relative;
-  
-}
-.boxHeader__h1{
+
+.containerNav__h1{
  color:rgba(4, 66, 174, 0.788)
 }
-.boxHeader__div__h1__nav {
+
+.containerNav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 30px;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0px 50px;
-    position: absolute;
-    top: 7px;
-    left: 0px;
-    right: 0px;
 }
-.boxHeader__div__h1__nav li {
+.boxNavBar__Li {
     list-style: none;
     text-decoration: none;
 }
-.boxHeader__div__h1__nav ul {
+.boxNavBar__Ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
-.boxHeader__div__h1__nav a {
+.boxNavBar a {
  color:rgba(4, 66, 174, 0.788);
     text-decoration: none;
     font-weight: bold;
 }
-.boxHeader__div__img {
-    width: 100%;
-    height: 300px;
-    
-}
+
+
+
 .boxHeader__div__img img {
- width: 100%;
- height: 183px;
- object-fit: contain;
- position: absolute;
- top: 57px;
- right: 3%;
+    width: 224px;
+    height: 121px;
+}
+
+/*header*/
+.boxHeader{
+position: relative;
 }
 .boxHederContainer__img2__p{
     position: relative;
@@ -58,12 +52,39 @@
     flex-direction: row;
     gap:40px;
 }
-.boxHeader__div__img2{
-}
-.boxHeader__div__img2__p{
-  width: 700px;
-}
 
+.boxHeader__div__img2__p{
+    width: 727px;
+    position: absolute;
+    top: 343px;
+    left: 475px;
+    padding: 43px;
+    background: white;
+    box-shadow: 0px 0px 7px 1px grey;
+    border-radius: 25px;
+}
+.boxHeader__div__img2__p h3{
+    color: rgb(35, 34, 34);
+}
+.boxHeader__div__img2__p p{
+    color: rgb(0, 0, 0);
+   
+
+} 
+.boxHeader__div__img2{
+    position: relative;
+    top: 78px;
+    left: 346px;
+    z-index: 1;
+}
+.boxHeader__div__img2 img{
+    border-radius: 10px;
+   box-shadow: 0px 0px 7px 2px grey;
+   }
+
+
+
+/*fin header*/
 /*bola caza pokemon, imitación al carrito*/
 .boxNavBar__Li__img {
     height: 30px;
@@ -80,11 +101,13 @@
     margin: 70px;
     background-color: rgba(255, 215, 82, 0.397);
     border-radius: 30px;
+  
 }
 /*carta de pokémon*/
 .boxProduct {
     margin: 0px auto;
     padding: 20px;
+   
 }
 .boxProduct__product {
     display: flex;
@@ -96,6 +119,7 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 1px 1px 3px 0px orangered;
+    
 }
 /*h2 ferchdata*/
 .boxPokemon__h2{
@@ -117,7 +141,10 @@
     position: absolute;
     top: 267px;
     right: 0px;
-    
+}
+.boxProduct__name{
+    color: black;
+    font-weight: bold;
 }
    .boxCart_Carrito h2{
     margin:30px;
@@ -133,6 +160,9 @@
     border-radius: 10px;
     margin: 20px;
   
+}
+.boxProduct__button{
+ cursor: pointer;
 }
 .boxCart_Carrito__Datos__image img{
     width: 80px;
