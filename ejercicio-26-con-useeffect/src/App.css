@@ -152,6 +152,41 @@ animation-name: slidein2;
    box-shadow: 0px 0px 7px 2px grey;
    }
 
+   /*CARRUSEL CARRITO*/
+   .boxCapsHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 1373px;
+
+}
+
+
+   .product-caps{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 200px;
+    z-index: 1;
+   }
+
+   .product-Caps{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+   }
+   .product-image{
+    width: 50px;
+    height: 50px;
+   }
+   
+
 
 
 /*fin header*/
@@ -261,6 +296,7 @@ animation-name: slidein2;
     top: 267px;
     right: 0px;
     color: rgba(4, 66, 174, 0.788);
+    padding: 20px;
 }
 .quantity-controls{
         display: flex;
@@ -284,3 +320,24 @@ animation-name: slidein2;
         background-color: blue;
         color: white;
     }
+
+/*carrito vacío articulos de interes*/
+    .containerCart-Caps{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: rgba(234, 238, 92, 0.762);
+        border-radius: 20px;
+        padding: 30px;
+    }
+.containerCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px;
+
+}
