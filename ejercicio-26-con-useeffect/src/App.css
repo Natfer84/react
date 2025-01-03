@@ -44,6 +44,7 @@
 /*header*/
 .boxHeader{
 position: relative;
+
 }
 .boxHederContainer__img2__p{
     position: relative;
@@ -57,16 +58,31 @@ position: relative;
     width: 727px;
     position: absolute;
     top: 343px;
-    left: 475px;
+    left: 521px;
     padding: 43px;
     background: white;
     box-shadow: 0px 0px 7px 1px grey;
     border-radius: 25px;
+    animation-duration: 2.5s;
+    animation-name: nat;
 }
-.boxHeader__div__img2__p h3{
+@keyframes nat {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.boxHeader__div__img2__p h3,
+.boxHeader__div__img3__p h3{
     color: rgb(35, 34, 34);
 }
-.boxHeader__div__img2__p p{
+.boxHeader__div__img2__p p,
+.boxHeader__div__img3__p p{
     color: rgb(0, 0, 0);
    
 
@@ -74,10 +90,64 @@ position: relative;
 .boxHeader__div__img2{
     position: relative;
     top: 78px;
-    left: 346px;
+    left: 391px;
     z-index: 1;
+    animation-duration: 0.5s;
+    animation-name: slidein;
 }
-.boxHeader__div__img2 img{
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 100%;
+    }
+  }
+
+  .boxHeader__div__img3__p{
+    width: 727px;
+    position: absolute;
+    top: 860px;
+    left: 465px;
+    padding: 43px;
+    background: white;
+    box-shadow: 0px 0px 7px 1px grey;
+    border-radius: 25px;
+  animation-duration: 2s;
+animation-name: slidein2;
+}
+  .boxHeader__div__img3 img{
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .boxHeader__div__img3{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    top: 389px;
+    left: 1136px;
+    z-index: 1;
+    animation-duration: 1.5s;
+    animation-name: slidein2;
+}
+@keyframes slidein2 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 100%;
+    }
+  }
+
+.boxHeader__div__img2 img,
+.boxHeader__div__img3{
     border-radius: 10px;
    box-shadow: 0px 0px 7px 2px grey;
    }

@@ -11,18 +11,23 @@ export default function Header() {
       </div>
 
       <div className="boxHeader__div__img2__p">
-        <h3>Descubre la Tienda Pokémon en España</h3>
+        <h3>LA TIENDA POKÉMON</h3>
         <p>
-          Bienvenido a Tienda-Pokemon.es, la tienda 100% Pokémon de España y
-          LATAM. Como entusiastas de Pokémon, hemos seleccionado para ti los
-          mejores productos Pokémon de las diferentes temporadas: Disfraces,
-          Camisetas, Sudaderas, Peluches, Figuritas, Bolsos... Hay para todos
-          los gustos. Desde Pokémon de la primera generación hasta Pokémon
-          Escarlata y Púrpura de la novena generación, ¡encuentra lo que buscas
-          en la Tienda Pokémon y vive al máximo tu pasión! Nuestra tienda online
-          ofrece artículos de calidad para fans de todas las edades. Únete a
-          nuestra comunidad de entusiastas y colecciona accesorios raros y
-          exclusivos. No te pierdas nuestras ofertas especiales y nuevos
+        ¡Bienvenido a nuestra Tienda Pokémon! Aquí encontrarás una amplia selección de productos dedicados al fascinante mundo de Pokémon. Sumérgete en la aventura con las figuras Pokémon, los peluches Pokémon, las mochilas Pokémon y mucho más.
+        </p>
+      </div>
+      
+      <div className="boxHeader__div__img3">
+        <img
+          src="https://preview.redd.it/d83o8zhw83za1.jpg?width=640&crop=smart&auto=webp&s=5f946ecdb1e755a948e9be084d558feee51a96b7"
+          alt="Charmander animal pokemon"
+        ></img>
+      </div>
+
+      <div className="boxHeader__div__img3__p">
+        <h3>Descubre los productos</h3>
+        <p>
+          No te pierdas nuestras ofertas especiales y nuevos
           productos en la Tienda Pokémon. La Tienda Pokémon, como si de un
           Pokémon Center se tratara, ofrece tanto a adultos como a niños
           artículos Pokémon de calidad: camisetas, sudaderas, zapatillas,
@@ -31,6 +36,8 @@ export default function Header() {
           ¡hay algo para todos!
         </p>
       </div>
+
+
     </div>
   );
 }

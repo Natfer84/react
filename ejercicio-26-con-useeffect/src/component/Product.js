@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function Product({ product, onAddToCart,count,IncrementCounter }) {
+export default function Product({ product, onAddToCart,count, }) {
 
   return (
     <div className="boxProduct">
@@ -11,7 +11,7 @@ export default function Product({ product, onAddToCart,count,IncrementCounter })
         </div>
         <div className="boxProduct__name">{product.name}</div>
         <button onClick={() => {
-          onAddToCart(product,count );
+          onAddToCart(product,count, );
          
         }} className="boxProduct__button">
           Añadir a Pokebola
